@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block styles %}
+        <link rel="stylesheet" href="{% static 'home.css' %}">
+    {% endblock styles%}
+    {% block title %}
+        <title>Old Man Behaving Badly</title>
+    {% endblock title %}
+</head>
+<body>
+    {% block content %}
+        <h2>This is the Home page</h2>
+        <ul>Lets talk about food.</ul>
+<!--        <form action=''>-->
+<!--                <input type="text" name="q"/>-->
+<!--                <input type="submit"/>-->
+<!--        </form>-->
+<!--        {% for blog in blogs %}-->
+<!--            <li>-->
+<!--                <p>{{blog.blog_title}}</p>-->
+<!--                <p>{{blog.blog_content}}</p>-->
+<!--            </li>-->
+<!--        {% endfor content%}-->
+    {% endblock %}
+</body>
+</html>
