@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 {% load static %}
+
 <html lang="en">
     <head>
-         <meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'base.css' %}">
         {% block title %} <title>Base</title> {% endblock title %}
-        {% block styles %} <link rel="stylesheet" href="{% static 'base.css' %}"> {% endblock styles %}
+        {% block styles %}  {% endblock styles %}
     </head>
     <body>
         <div class="navigate">
             <a href="{% url 'home' %}">Home</a>
-            </div>
+            <a href="{% url 'login_view' %}">Account Login</a>
+        </div>
         {% block content %} {% endblock content %}
     </body>
 </html>
